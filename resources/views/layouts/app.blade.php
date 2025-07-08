@@ -39,9 +39,25 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('reports.books-by-category') }}">
+                        <a class="nav-link {{ request()->routeIs('users.*') ? 'active' : '' }}"
+                            href="{{ route('users.index') }}">
+                            <i class="bi bi-person"></i> Users
+                        </a>
+                    </li>
+                    <!-- Di navigation -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             <i class="bi bi-graph-up"></i> Laporan
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('reports.books-by-category') }}">
+                                <i class="bi bi-pie-chart"></i> Buku per Kategori
+                            </a></li>
+                            <li><a class="dropdown-item" href="{{ route('reports.low-stock') }}">
+                                <i class="bi bi-exclamation-triangle"></i> Stok Menipis
+                            </a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

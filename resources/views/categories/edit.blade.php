@@ -1,4 +1,3 @@
-{{-- filepath: c:\Users\Monster\Downloads\Alham\projects\test_prep\resources\views\categories\edit.blade.php --}}
 @extends('layouts.app')
 
 @section('title', 'Edit Kategori')
