@@ -1,0 +1,31 @@
+Studi Kasus Employee
+
+Table yang dibutuhkan
+Employee
+Position
+Department
+
+- Table Department
+id
+name
+description
+is_active
+timestamps
+
+- Table Position
+id
+name
+description
+is_active
+timestamps
+
+- Table Employee
+id
+name
+employee_id
+department_id
+position_id
+salary
+hire_date
+status
+timestamps
